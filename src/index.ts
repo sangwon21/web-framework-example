@@ -1,6 +1,8 @@
-import { User } from './models/User'
+import { User } from './models/User';
 
-const user = new User({ name: 'name', age: 12 })
+const user = new User({ name: 'name', age: 12 });
 
-console.log(user.get('name'))
-console.log(user.get('age'))
+user.set({ name: 'newname', age: 50 });
+
+console.log(user.get('name'));
+console.log(user.get('age'));
