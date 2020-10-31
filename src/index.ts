@@ -6,4 +6,4 @@ user.on('change', () => {
     console.log('hello');
 });
 
-console.log(user);
+user.trigger('change');
